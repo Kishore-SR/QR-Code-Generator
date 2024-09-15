@@ -24,4 +24,18 @@ function generate() {
     }
 }
 
+// Function to create dowloadable png image of QR CODE
+function downloadQR() {
+    let qrURL = downBtn.getAttribute('data-url');
+    if (qrURL) {
+        let link = document.createElement('a');
+        link.href = qrURL;
+        link.download = 'QRCode.png';  
+        document.body.appendChild(link);
+        link.click();  
+        document.body.removeChild(link);  
+    } else {
+        alert("Please generate a QR code first.");
+    }
+}
 
