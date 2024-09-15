@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>QR Generator - KSR</title>
+    <meta name="author" content="Kishore S R">
+    <meta property="og:title" content="QR Code Generator - KSR">
+    <meta property="og:description"
+        content="Generate QR codes instantly for your URL or text with our free and easy-to-use QR Code Generator.">
+
+        <link rel="shortcut icon" href="https://cdn.vectorstock.com/i/1000x1000/48/98/3d-qr-code-icon-isolated-vector-46614898.webp" type="image/x-icon">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h1>QR Generator</h1>
+        <input type="text" class="qr-text" placeholder="Enter text or URL">
+        <br>
+        <img class="qrImg" src="" alt="qr code">
+        <div class="btn-box">
+            <button class="gen-qr" onclick="generate()">Generate QR</button>
+            <button class="down-qr js-btn-disable" onclick="downloadQR()" disabled>Download QR</button>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
